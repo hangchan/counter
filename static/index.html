@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="/" />
+    <title>The Best In-Memory Counter Ever</title>
+    <link rel="stylesheet" href="static/styles.css" />
+    <script type="text/javascript">
+      async function counterApi(endpoint) {
+        const response = await fetch(endpoint);
+        const data = await response.json();
+        document.getElementById("counter").innerHTML = data.counter;
+      }
+
+      async function getCounter() {
+        await counterApi("api/counter");
+      }
+
+      async function incrementCounter() {
+        await counterApi("api/counter/increment");
+      }
+
+      getCounter();
+    </script>
+  </head>
+  <body>
+    <div class="counter-box">
+      <h1>The Best In-Memory Counter Ever</h1>
+      <div>Counter: <span id="counter"></span></div>
+      <button onclick="incrementCounter()">Increment</button>
+    </div>
+  </body>
+</html>

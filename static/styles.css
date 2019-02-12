@@ -1,0 +1,25 @@
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.counter-box {
+  align-items: center;
+  border: 1px black solid;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-size: 18px;
+  width: 500px;
+}
+
+.counter-box h1 {
+  font-size: 24px;
+}
+
+.counter-box button {
+  font-size: 18px;
+  margin: 10px;
+  padding: 10px;
+}
