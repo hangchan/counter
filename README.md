@@ -36,7 +36,8 @@ run the docker image
 ```
 
 ```
-beanstalk - tried to deploy app via elastic beanstalk.  This is the most Amazon native way of deploying flask apps.  Could not use it as Beanstalk uses apache httpd server instead of nginx.
+beanstalk - tried to deploy app via elastic beanstalk.  This is the most Amazon native way of 
+deploying flask apps.  Could not use it as Beanstalk uses apache httpd server instead of nginx.
 ```
 
 ## Todos
